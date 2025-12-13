@@ -32,109 +32,6 @@ Git & GitHub
 
 Postman (API testing)
 
-📁 Project Folder Structure
-
-ecommerce-backend/
-│
-├── manage.py
-├── README.md
-├── db.sqlite3
-│
-├── ecommerce_api/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── accounts/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── products/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── cart/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── orders/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-└── venv/
-ecommerce-backend/
-│
-├── manage.py
-├── README.md
-├── db.sqlite3
-│
-├── ecommerce_api/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── accounts/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── products/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── cart/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── orders/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-└── venv/
-
 📆 Development Progress by Week
 ✅ WEEK 1 – Project Setup & Architecture
 Objectives Achieved
@@ -212,15 +109,5 @@ category
 
 created_at
 
-API Endpoints
-
-GET     /api/products/
-GET     /api/products/<id>/
-POST    /api/products/        (admin only)
-PUT     /api/products/<id>/   (admin only)
-DELETE  /api/products/<id>/   (admin only)
-
-GET     /api/products/categories/
-POST    /api/products/categories/   (admin only)
 
 

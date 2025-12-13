@@ -1,6 +1,3 @@
-Here is a clean, professional README.md you can copy–paste directly into your repository.
-It is well-organized, ALX-ready, and clearly documents Week 1, Week 2, and Week 3 progress with proper folder structure.
-
 🛍️ E-Commerce Backend API
 
 ALX Backend Software Engineering – Capstone Project

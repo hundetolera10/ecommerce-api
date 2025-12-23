@@ -1,113 +1,218 @@
-🛍️ E-Commerce Backend API
 
-ALX Backend Software Engineering – Capstone Project
+# 🛍️ E-Commerce Backend API
 
-📌 Project Overview
+**ALX Backend Software Engineering – Capstone Project**
 
-This project is a fully functional E-Commerce Backend API built using Django and Django REST Framework (DRF).
+## 📌 Project Overview
+
+This project is a fully functional **E-Commerce Backend API** built using **Django** and **Django REST Framework (DRF)**.
 It supports product browsing, category management, shopping cart functionality, and user authentication.
-The project follows RESTful API principles and uses Django ORM for all database operations.
+The project follows **RESTful API principles** and uses **Django ORM** for all database operations.
 
-🧑‍🎓 Student Information
+## 🧑‍🎓 Student Information
 
-Name: Hunde Tolera
+* **Name:** Hunde Tolera
+* **Program:** ALX Backend Software Engineering
+* **Project Type:** Capstone
+* **Backend Framework:** Django + Django REST Framework
 
-Program: ALX Backend Software Engineering
+## 🛠️ Technologies Used
 
-Project Type: Capstone
+* Python
+* Django
+* Django REST Framework
+* SQLite (development)
+* Git & GitHub
+* Postman (API testing)
 
-Backend Framework: Django + Django REST Framework
+## 📁 Project Folder Structure
 
-🛠️ Technologies Used
+ecommerce-backend/
+│
+├── manage.py
+├── README.md
+├── db.sqlite3
+│
+├── ecommerce_api/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── accounts/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+│
+├── products/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+│
+├── cart/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+│
+├── orders/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+│
+└── venv/
 
-Python
+# 📆 Development Progress by Week
 
-Django
+## ✅ WEEK 1 – Project Setup & Architecture
 
-Django REST Framework
+### Objectives Achieved
 
-SQLite (development)
+* Created Django project and virtual environment
+* Installed Django REST Framework
+* Created core apps:
 
-Git & GitHub
+  * accounts
+  * products
+  * cart
+  * orders
+* Configured REST Framework settings
+* Set up main API routing
+* Initialized database and migrations
+* Created superuser
+* Tested project startup successfully
 
-Postman (API testing)
+### Key Files (Week 1)
 
-📆 Development Progress by Week
-✅ WEEK 1 – Project Setup & Architecture
-Objectives Achieved
+* settings.py – Installed apps & DRF configuration
+* urls.py– Global API routing
+* App skeletons with proper structure
 
-Created Django project and virtual environment
 
-Installed Django REST Framework
 
-Created core apps:
+## ✅ WEEK 2 – Products & Categories Module
 
-accounts
+### Features Implemented
 
-products
+* Category model
+* Product model
+* Product–Category relationship
+* CRUD APIs for categories
+* CRUD APIs for products
+* Admin-only product/category creation
+* Public product & category listing
+* Django Admin integration
 
-cart
+### Models
 
-orders
+* **Category**
 
-Configured REST Framework settings
+  * name
+  * description
 
-Set up main API routing
+* **Product**
 
-Initialized database and migrations
+  * name
+  * description
+  * price
+  * stock
+  * category
+  * created_at
 
-Created superuser
+### API Endpoints
 
-Tested project startup successfully
 
-Key Files (Week 1)
+GET     /api/products/
+GET     /api/products/<id>/
+POST    /api/products/        (admin only)
+PUT     /api/products/<id>/   (admin only)
+DELETE  /api/products/<id>/   (admin only)
 
-settings.py – Installed apps & DRF configuration
+GET     /api/products/categories/
+POST    /api/products/categories/   (admin only)
 
-urls.py – Global API routing
+## ✅ WEEK 3 – Cart & CartItem System
 
-App skeletons with proper structure
+### Features Implemented
 
-✅ WEEK 2 – Products & Categories Module
-Features Implemented
+* Cart model (one cart per user)
+* CartItem model
+* Automatically create cart per user
+* Add product to cart
+* Remove product from cart
+* Update item quantity
+* View cart contents
+* Secure cart endpoints (authenticated users only)
 
-Category model
+### Models
 
-Product model
+* **Cart**
 
-Product–Category relationship
+  * user (OneToOne)
 
-CRUD APIs for categories
+* **CartItem**
 
-CRUD APIs for products
+  * cart
+  * product
+  * quantity
 
-Admin-only product/category creation
+### API Endpoints
 
-Public product & category listing
+GET     /api/cart/
+POST    /api/cart/add/
+POST    /api/cart/remove/
+POST    /api/cart/update/
 
-Django Admin integration
+## 🔐 Authentication
 
-Models
+* Token-based authentication using Django REST Framework
+* Admin users can manage products and categories
+* Regular users can manage their own carts
 
-Category
+## ▶️ How to Run the Project Locally
 
-name
+# Clone the repository
+git clone <your-repo-url>
+cd ecommerce-backend
 
-description
+# Create virtual environment
+python -m venv venv
+source venv/Scripts/activate  # Windows
 
-Product
+# Install dependencies
+pip install django djangorestframework
 
-name
+# Run migrations
+python manage.py migrate
 
-description
+# Create superuser
+python manage.py createsuperuser
 
-price
+# Run server
+python manage.py runserver
 
-stock
+## 🧪 Testing
 
-category
+* Django REST Framework Browsable API
+* Browser testing
+* Postman (recommended)
 
-created_at
 
 
 

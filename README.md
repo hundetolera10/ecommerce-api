@@ -25,59 +25,6 @@ The project follows **RESTful API principles** and uses **Django ORM** for all d
 * Git & GitHub
 * Postman (API testing)
 
-## 📁 Project Folder Structure
-
-ecommerce-backend/
-│
-├── manage.py
-├── README.md
-├── db.sqlite3
-│
-├── ecommerce_api/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── accounts/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── products/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── cart/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-├── orders/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-└── venv/
-
 # 📆 Development Progress by Week
 
 ## ✅ WEEK 1 – Project Setup & Architecture

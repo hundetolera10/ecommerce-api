@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f8iw&l3ghvc0$$2b0kp9881%w3^$z0gpg(8ghbty5*iq0c!-a0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    'hundetolera.pythonanywhere.com',
     '127.0.0.1',
     'localhost',
 ]
@@ -133,13 +132,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_URL = BASE_DIR / 'staticfiles'
-
-MIDDLEWARE.insert(
-    1, 'whitenoise.middleware.WhiteNoiseMiddleware'
-)
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

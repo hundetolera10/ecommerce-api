@@ -3,7 +3,7 @@ from .views import (
     CartDetailView,
     AddToCartView,
     RemoveFromCartView,
-    UpdateCartItemView
+    UpdateCartItemView,
 )
 
 urlpatterns = [

@@ -67,4 +67,4 @@ class UpdateCartItemView(APIView):
         cart_item.save()
 
         return Response({"message": "Cart updated"})
-
+    

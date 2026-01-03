@@ -1,10 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
 from rest_framework import generics, permissions
 from .models import Category, Product
 from .serializers import CategorySerializer, ProductSerializer
-
+from rest_framework.response import Response
 # ----------------- CATEGORY ------------------
 
 class CategoryListCreateView(generics.ListCreateAPIView):
@@ -47,3 +45,4 @@ class ProductDetailView(generics.RetrieveUpdateDestroyAPIView):
         if self.request.method in ["PUT", "DELETE"]:
             return [permissions.IsAdminUser()]
         return [permissions.AllowAny()]
+    

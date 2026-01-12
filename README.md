@@ -86,12 +86,17 @@ The project follows **RESTful API principles** and uses **Django ORM** for all d
 
 
 GET     /api/products/
+
 GET     /api/products/<id>/
+
 POST    /api/products/        (admin only)
+
 PUT     /api/products/<id>/   (admin only)
+
 DELETE  /api/products/<id>/   (admin only)
 
 GET     /api/products/categories/
+
 POST    /api/products/categories/   (admin only)
 
 ## ✅ WEEK 3 – Cart & CartItem System
@@ -159,11 +164,6 @@ python manage.py runserver
 * Django REST Framework Browsable API
 * Browser testing
 * Postman (recommended)
-
-
-Here is a **clean, detailed, and reviewer-friendly README for WEEK 4** of your E-commerce Backend API.
-You can place this inside a folder like `docs/week4/README.md` **or** copy it into your main README under a **Week 4** section.
-
 ---
 
 # 🟦 WEEK 4 — Orders & Payment Simulation

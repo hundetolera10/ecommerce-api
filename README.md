@@ -199,12 +199,19 @@ By the end of this week, the backend supports the full flow:
 ## 🗂️ Folder Structure (Week 4)
 
 orders/
+
 ├── admin.py
+
 ├── apps.py
+
 ├── models.py
+
 ├── serializers.py
+
 ├── urls.py
+
 ├── views.py
+
 └── migrations/
 
 ## 🧱 Models Implemented

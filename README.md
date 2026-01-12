@@ -89,11 +89,11 @@ GET     /api/products/
 
 GET     /api/products/<id>/
 
-POST    /api/products/        (admin only)
+POST    /api/products/products/     (admin only)
 
-PUT     /api/products/<id>/   (admin only)
+PUT     /api/products/products/<id>/   (admin only)
 
-DELETE  /api/products/<id>/   (admin only)
+DELETE  /api/products/products/<id>/   (admin only)
 
 GET     /api/products/categories/
 
@@ -127,8 +127,11 @@ POST    /api/products/categories/   (admin only)
 ### API Endpoints
 
 GET     /api/cart/
+
 POST    /api/cart/add/
+
 POST    /api/cart/remove/
+
 POST    /api/cart/update/
 
 ## 🔐 Authentication
